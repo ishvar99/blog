@@ -1,0 +1,16 @@
+<%include partials/header.ejs%> 
+ <div class="ui main text container segment">
+  <div class="ui huge header">Login</div>
+ <form class="ui form" method="post" action="/login">
+  <div class="field">
+    <label>Username</label>
+    <input type="text" name="username" placeholder="username">
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <input type="password" name="password" placeholder="password">
+  </div> 
+  <button class="ui purple large basic button" type="submit">Submit</button>
+</form>
+</div>
+<%include partials/footer.ejs%> 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLOGSPOT</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="/app.css">
+</head>
+<body>
+<div class="ui fixed inverted menu">
+		<div class="header item"><i class="code icon"></i>BlogSite
+  </div>
+  <a class="item" href="/blogs">
+    Home
+  </a>
+  <a class="item" href="/blogs/new">
+    New Post
+  </a>
+  <div class="right menu">
+    <% if(!isUser){%>
+    <a class="item" href="/register">Sign Up</a>
+    <a class="item" href="/login">Login</a>
+  <% }else{ %>
+    <a class="item" href="/logout">Logout</a>
+  <% }%>
+  </div>
+</div> 
+
+
+		
