@@ -27,7 +27,7 @@ res.locals.isUser=req.user;
 next();
 });
 app.set("view engine","ejs");
-mongoose.connect("mongodb://localhost/blog", { useNewUrlParser: true });
+mongoose.connect("mongodb://ishan:yelpcamp123@ds029821.mlab.com:29821/blog876", { useNewUrlParser: true });
 var blogSchema= new mongoose.Schema(
 {
 title: String,
