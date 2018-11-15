@@ -1,4 +1,3 @@
-
 i.icon{
 	font-size: 1.5em;
 }
@@ -8,3 +7,8 @@ i.icon{
 #delete{
 	display: inline;
 }
+.padding{
+	padding-left: 3%;
+}
+
+	 

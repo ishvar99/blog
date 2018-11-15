@@ -1,20 +1,26 @@
 <%include partials/header.ejs%>
 <div class="ui text main container segment">
-	<h1><%= blog.title%></h1>
+	<h1 align="center" style="font-size: 3rem"><%= blog.title%></h1>
+	<br>
 	<div class="ui top attached">
 		<div class="item">
-			<img src="<%= blog.image%>" alt="Error">
-				<div class="content">
-			<span><%= blog.created.toDateString()%></span>
+			<img class="padding" style=" width: 100%"src="<%= blog.image%>" alt="Error">
+				<div class="content padding">
+					<br>
+			<span style="font-family:'Slabo 27px', serif;font-size: 2rem"><%= blog.created.toDateString()%></span>
 		</div>
-		<div class="description">
-			<p><%- blog.body%></p>	
+		<br>
+		<div class="description padding">
+			<p style="font-family:'Slabo 27px', serif; font-size:2rem"><%- blog.body%></p>	
 		</div>
 		</div>
 	</div>
-	<a href="/blogs/<%= blog._id%>/edit" class="ui blue large basic button" >Edit</a>
-	<form id="delete" action="/blogs/<%= blog._id%>?_method=DELETE" method="post">
-	<button class="ui red large basic button">Delete</button>
+	<br>
+	<div class="padding" style="display: inline;">
+	<a href="/blogs/<%= blog._id%>/edit" class="ui blue large basic button" >Edit <i class="fas fa-edit"></i></a>
+	</div>
+	<form style="padding-left:2px" id="delete" action="/blogs/<%= blog._id%>?_method=DELETE" method="post">
+	<button class="ui red large basic button">Delete <i class="fas fa-trash-alt"></i></button>
 </form>
 </div>
 <%include partials/footer.ejs%>
